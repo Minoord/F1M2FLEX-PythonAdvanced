@@ -24,21 +24,21 @@ class mario (character):
 
     def __init__(self):
         super().__init__()
-        character.jumpHeight = 5
-        character.attack = 13
-        mario.jumpHeight = 10
-        mario.attack = 17
+        self.jumpHeight = 5
+        self.attack = 13
+        self.jumpHeight = 10
+        self.attack = 17
 
     def walk(self):
         super().walk()
-        mario.speed = 9
+        self.speed = 9
         print("Mario started walking differntly. his speed is:", self.speed)
 
     def jump(self):
         print("Landing")
 
     def running(self):
-        mario.speed = 20
+        self.speed = 20
         print("Mario starts running. its speed is now", self.speed)
 
     def jump(self):
